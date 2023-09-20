@@ -156,6 +156,7 @@ width: 33%;
   width: auto;
   min-height: auto;
   margin: var(--margin);
+  padding: 10px
 }
 /* .grid__item:last-child {
   grid-column: 3 / 3;
