@@ -89,6 +89,23 @@
   a:active {
     color: #489c79;
   }
+  
+  .about {
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .table {
+    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  
   button {
     border: none;
     display: inline-block;
@@ -103,6 +120,7 @@
     -o-transition-property: opacity 0.2s;
     transition-property: opacity 0.2s
   }
+  
   .button {
     border: none;
     display: inline-block;
@@ -117,6 +135,7 @@
     -o-transition-property: opacity 0.2s;
     transition-property: opacity 0.2s
   }
+  
   form__input {
     border: none;
     display: inline-block;
@@ -131,6 +150,7 @@
     -o-transition-property: opacity 0.2s;
     transition-property: opacity 0.2s
   }
+  
   .form__input {
     border: none;
     display: inline-block;
