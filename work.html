@@ -16,9 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <header class="page-header">
         <a href="index.html">
             <img src="img/faviconio-logo/logo-cmr927.png" alt="cmr927's logo" class="page-header__item">
@@ -50,8 +55,33 @@
                     This Pokédex web application is built with HTML, CSS, JavaScript, and Bootstrap. All the Pokémon
                     information is from the RESTful Pokémon API.
                 </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PokédexModal">
+                    Show screenshot
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="PokédexModal" tabindex="-1" aria-labelledby="PokédexModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="PokédexModalLabel">Pokédex App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a1-pokedex.jpg" style="width: 100%" alt="Screenshot of the Pokédex App">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <p>
-                    Technologies: HTML, CSS, JavaScript and Bootstrap
+                    <b> Technologies:</b> HTML5, CSS3, JavaScript and Bootstrap
                 </p>
                 <a href="https://cmr927.github.io/pokedex-app">Link to Pokédex App</a>
                 <br>
@@ -65,7 +95,8 @@
                     and MyFlix Angular.
                 </p>
                 <p>
-                    Technologies: MongoDB, Mongoose, Express, Node.js, Netlify, HTML, CSS, and JavaScript
+                    <b> Technologies:</b> MongoDB, Mongoose, Express, Node.js, Netlify, Passport, bcrypt, JSON Web Token
+                    (JWT), JSDoc, HTML5, CSS3, and JavaScript
                 </p>
                 <a href="https://movies-myflix-cmr927-6d25967ba551.herokuapp.com/documentation.html">Link to the MyFlix
                     API
@@ -81,7 +112,7 @@
                     information, and create a list of their favorite movies. It uses the custom MyFlix API.
                 </p>
                 <p>
-                    Technologies: React, Bootstrap, HTML, SCSS, JavaScript, Netlify
+                    <b> Technologies:</b> React, Bootstrap, HTML, SCSS, JavaScript, Netlify
                 </p>
                 <a href="https://cmr927-myflix.netlify.app">Link to MyFlix Client React App </a>
                 <br>
@@ -95,12 +126,36 @@
                     written with Node/Express as Lambda functions (FaaS) and is hosted on AWS. The serverless functions
                     connect to the Google Calendar API.
                 </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MeetModal">
+                    Show screenshot
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MeetModal" tabindex="-1" aria-labelledby="MeetModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="MeetModalLabel">Meet App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a4-meet.jpg" style="width: 100%" alt="Screenshot of the Meet App">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>
-                    Technologies: React, Node, Express, AWS, Gherkin, HTML, CSS, JavaScript
+                    <b> Technologies:</b> React, Node, Express, AWS, Gherkin, HTML, CSS, JavaScript
                 </p>
                 <a href="https://cmr927.github.io/meet/">Link to Meet App</a>
                 <br>
-                <a href="https://github.com/cmr927/meet">Meet App GitHub repository</a>
+                <a href="https://github.com/cmr927/meet">Link to GitHub repository</a>
             </div>
             <div class="grid__item">
                 <h2>Chat App</h2>
@@ -109,7 +164,8 @@
                     optimized for both Android and iOS devices.
                 </p>
                 <p>
-                    Technologies: React Native, Expo, Google Firestore Database, Android Studio, Gifted Chat Library,
+                    <b> Technologies:</b> React Native, Expo, Google Firestore Database, Android Studio, Gifted Chat
+                    Library,
                     Node.js, JavaScript
                 </p>
                 <a href="#">Link to video demo of Chat App</a>
@@ -123,8 +179,34 @@
                     different movies, directors, and genres. Users are able to sign up, update their personal
                     information, and create a list of their favorite movies. It uses the custom MyFlix API.
                 </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#MyFlixAngularModal">
+                    Show screenshot
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MyFlixAngularModal" tabindex="-1" aria-labelledby="MyFlixAngularModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="MyFlixAngularLabel">Meet App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a6-myflix-angular.jpg" style="width: 100%"
+                                    alt="Screenshot of the MyFlix Angular App">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>
-                    Technologies: Angular, TypeScript, TypeDoc, Node.js, HTML, SCSS, JavaScript
+                    <b> Technologies:</b> Angular, TypeScript, TypeDoc, Node.js, HTML, SCSS, JavaScript
                 </p>
                 <a href="https://cmr927.github.io/myFlix-Angular-client">Link to the MyFlix Client Angular App</a>
                 <br>
@@ -145,7 +227,6 @@
             <a href="#">Back to top</a>
         </p>
     </footer>
-    <!-- <script src="js/tota11y.min.js"></script>  -->
 </body>
 
 </html>
