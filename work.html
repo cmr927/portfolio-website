@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cmr927's Work</title>
+    <title>Challis Regan's Work</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
@@ -16,9 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <header class="page-header">
         <a href="index.html">
             <img src="img/faviconio-logo/logo-cmr927.png" alt="cmr927's logo" class="page-header__item">
@@ -45,39 +50,337 @@
         <h1>Work</h1>
         <div class="grid">
             <div class="grid__item">
-                <h2>A1 Mobile web app</h2>
+                <h2>Pokédex App</h2>
                 <p>
-                    1 Within this project, I was responsible for the frontend. It's written in React.js. Additionally,
-                    I've created the HTML and CSS templates.
+                    This Pokédex web application shows a list of Pokémon and more details when a user clicks on a
+                    Pokémon.
                 </p>
-                <a href="#">See project on GitHub</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PokédexModal">
+                    More Information
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="PokédexModal" tabindex="-1" aria-labelledby="PokédexModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="PokédexModalLabel">Pokédex App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a1-pokedex.jpg" style="width: 100%" alt="Screenshot of the Pokédex App">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <b> Technologies:</b> HTML5, CSS3, JavaScript, Bootstrap 5, <a
+                        href="https://pokeapi.co/api/v2/pokemon/?limit=1017">RESTful Pokémon API</a>
+                </p>
+                <a href="https://cmr927.github.io/pokedex-app">Link to Pokédex App</a>
+                <br>
+                <a href="https://github.com/cmr927/pokedex-app">Link to GitHub repository</a>
             </div>
             <div class="grid__item">
-                <h2>A2 Mobile web app </h2>
+                <h2> MyFlix API </h2>
                 <p>
-                    2 Within this project, I was responsible for the frontend. It's written in React.js. Additionally,
-                    I've created the HTML and CSS templates.
+                    This is a custom RESTful API, which provides information about movies, titles, descriptions, genres,
+                    directors, images, features, users, and more. This API is used for my frontend apps MyFlix React
+                    and MyFlix Angular.
                 </p>
-                <a href="#">See project on GitHub</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MyFlixAPIModal">
+                    More Information
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MyFlixAPIModal" tabindex="-1" aria-labelledby="MyFlixAPIModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="MyFlixAPIModalLabel">MyFlix API Documentation</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a2-myflix-api.jpg" style="width: 100%"
+                                    alt="Screenshot of the MyFlix API Documentation">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b> Technologies:</b> Mongoose (MongoDB), Express, Node.js, Netlify, Passport, bcrypt, JSON Web
+                    Token (JWT), Heroku, JSDoc, HTML5, CSS3, and JavaScript
+                </p>
+                <a href="https://movies-myflix-cmr927-6d25967ba551.herokuapp.com/documentation.html">Link to the MyFlix
+                    API
+                    documentation</a>
+                <br>
+                <a href="https://github.com/cmr927/myFlix">Link to GitHub repository</a>
             </div>
             <div class="grid__item">
-                <h2>A3 Mobile web app</h2>
+                <h2>MyFlix Client React App</h2>
                 <p>
-                    3 Within this project, I was responsible for the frontend. It's written in React.js. Additionally,
-                    I've created the HTML and CSS templates.
+                    MyFlix is a single-page web application which provides users with access to information about
+                    different movies, directors, and genres. Users are able to sign up, update their personal
+                    information, and create a list of their favorite movies. It uses my custom MyFlix API.
                 </p>
-                <a href="#">See project on GitHub</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MyFlixReactModal">
+                    More Information
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MyFlixReactModal" tabindex="-1" aria-labelledby="MyFlixReactModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="MyFlixReactModalLabel">MyFlix React App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a3-myflix-react.jpg" style="width: 100%"
+                                    alt="Screenshot of the MyFlix React App">
+                                <p>
+                                    User Stories<br>
+                                <ul>
+                                    <li>As a user, I want to be able to receive information on movies, directors, and
+                                        genres so that I can learn more about movies I've watched or am interested in.
+                                    </li>
+                                    <li> As a user, I want to be able to create a profile so I can save data about my
+                                        favorite movies.</li>
+
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b> Technologies:</b> React, React-Router, React-Bootstrap, Parcel-Bundler, HTML5, SCSS, JavaScript,
+                    Netlify
+                </p>
+                <a href="https://cmr927-myflix.netlify.app">Link to MyFlix Client React App </a>
+                <br>
+                <a href="https://github.com/cmr927/myFlix-client">Link to GitHub repository</a>
             </div>
             <div class="grid__item">
-                <h2>A4 Meet App </h2>
+                <h2>Meet App </h2>
                 <p>
-                    Meet is a serverless, progressive web application (PWA) built with React using a test-driven
-                    development (TDD) technique. The front-end is written with JavaScript/React. The server logic is
-                    written with Node/Express as Lambda functions (FaaS) and is hosted on AWS. The serverless functions
-                    connect to the Google Calendar API.
+                    Meet is a serverless, progressive web application (PWA) where users can find events happening in
+                    various cities and filter the information. The app can also be used while offline.
                 </p>
-                <a href="https://cmr927.github.io/meet/">cmr927.github.io/meet</a>
-                <a href="https://github.com/cmr927/meet">Meet App GitHub repository</a>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MeetModal">
+                    More Information
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MeetModal" tabindex="-1" aria-labelledby="MeetModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="MeetModalLabel">Meet App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img\a4-meet.jpg" style="width: 100%" alt="Screenshot of the Meet App">
+                                <p> User Stories
+
+                                <ul>
+
+                                    <li>Feature 1: Filter Events By City </li>
+                                    <li>Feature 2: Show/Hide Event Details</li>
+                                    <li>Feature 3: Specify Number of Events</li>
+                                    <li>Feature 4: Use the App When Offline</li>
+                                    <li> Feature 5: Add an App Shortcut to the Home Screen</li>
+                                    <li>Feature 6: Display Charts Visualizing Event Details</li>
+                                </ul>
+
+                                Feature 1<br>
+                                As a user,<br>
+                                I should be able to filter events by city,<br>
+                                So that I can see a list of events taking place in that city.<br>
+
+                                <br> Feature 2<br>
+                                As a user,<br>
+                                I should be able to show/hide event details,<br>
+                                So that I can read more about the event if I am interested.<br>
+
+                                <br>Feature 3<br>
+                                As a user,<br>
+                                I should be able to specify the number of events,<br>
+                                So that I can customize my search results.<br>
+
+                                <br>Feature 4<br>
+                                As a user,<br>
+                                I should be able to use the app when offline,<br>
+                                So that I can use the app without worrying about the internet connection.<br>
+
+                                <br>Feature 5<br>
+                                As a user,<br>
+                                I should be able to add an app shortcut to the home screen,<br>
+                                So that I can find and open the app with fewer steps.<br>
+
+                                <br>Feature 6<br>
+                                As a user,<br>
+                                I should be able to display charts visualizing event details,<br>
+                                So that I can better understand the data.<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b> Technologies:</b> React, Node, Express, Jest, Jest Cucumber (Gherkin scenarios in Jest),
+                    Puppeteer, Atatus, AWS Lambda, Gherkin, HTML, CSS, JavaScript, Google Authentication, <a
+                        href="https://e7f39l4mof.execute-api.us-east-1.amazonaws.com/dev/api/get-events ">Google
+                        Calendar API</a>
+                </p>
+                <a href="https://cmr927.github.io/meet/">Link to Meet App</a>
+                <br>
+                <a href="https://github.com/cmr927/meet">Link to GitHub repository</a>
+            </div>
+            <div class="grid__item">
+                <h2>Chat App</h2>
+                <p>
+                    Chat App is a native chat app, for both Android and iOS devices. It sends and recieves text,
+                    pictures, locations, and audio recordings.
+                </p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ChatModal">
+                    More Information
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ChatModal" tabindex="-1" aria-labelledby="ChatModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="ChatModalLabel">Chat App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a5-chat-app.jpg" style="width: 50%" alt="Screenshot of the Chat App">
+                                <p>
+                                    Home screen
+                                </p>
+                                <img src="img/a5-chat-app-2.png" style="width: 50%" alt="Screenshot of the Chat App">
+                                <p>
+                                    Chat App sends and recieves text, pictures, locations, and audio recordings
+                                </p>
+                                <p>User Stories<br>
+                                <ul>
+                                    <li>As a new user, I want to be able to easily enter a chat room so I can quickly
+                                        star talking to my friends and family. </li>
+                                    <li>As a user, I want to be able to send messages to my friends and family members
+                                        to exchange the latest news.</li>
+                                    <li>As a user, I want to send images to my friends to show them what I'm currently
+                                        doing. </li>
+                                    <li>As a user, I want to share my location with my friends to show them where I am.
+                                    </li>
+                                    <li>As a user, I want to be able to read my messages offline so I can reread
+                                        conversations at any time.</li>
+                                    <li>As a user with a visual impairment, I want to use a chat app that is compatible
+                                        with a screen reader so that I can engage with a chat interface.</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b> Technologies:</b> React Native, Expo, Google Firestore Database, Android Studio, Gifted Chat UI
+                    Library, AsyncStorage, NetInfo, Android Studio virtual devices,
+                    Node.js, JavaScript
+                </p>
+                <!-- <a href="#">Link to video demo of Chat App</a> -->
+                <br>
+                <a href="https://github.com/cmr927/chat-app">Link to GitHub repository</a>
+            </div>
+            <div class="grid__item">
+                <h2>MyFlix Client Angular App</h2>
+                <p>
+                    MyFlix is a single-page web application which provides users with access to information about
+                    different movies, directors, and genres. Users are able to sign up, update their personal
+                    information, and create a list of their favorite movies. It uses my custom MyFlix API.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#MyFlixAngularModal">
+                    More Information
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MyFlixAngularModal" tabindex="-1" aria-labelledby="MyFlixAngularModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="MyFlixAngularLabel">Meet App</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/a6-myflix-angular.jpg" style="width: 100%"
+                                    alt="Screenshot of the MyFlix Angular App">
+                                <p>
+                                    User Stories<br>
+                                <ul>
+                                    <li>As a user, I want to be able to receive information on movies, directors, and
+                                        genres so that I can learn more about movies I've watched or am interested in.
+                                    </li>
+                                    <li> As a user, I want to be able to create a profile so I can save data about my
+                                        favorite movies.</li>
+
+                                </ul>
+                                </p>
+                                <a href="https://trello.com/b/n3WuHKQn/fsi-a6-collaboration-documentation">Link to the
+                                    Kanban board</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b> Technologies:</b> Angular, Angular Material, JSON Web Tokens (JWT), TypeDoc, Node.js, HTML5,
+                    SCSS and TypeScript
+                </p>
+                <a href="https://cmr927.github.io/myFlix-Angular-client">Link to the MyFlix Client Angular App</a>
+                <br>
+                <a href="https://github.com/cmr927/myFlix-Angular-client">Link to GitHub repository</a>
             </div>
         </div>
     </section>
@@ -86,16 +389,14 @@
             Find me on
         </p>
         <div class="social media">
-            <a href="https://github.com/cmr927">
-                <img src="img/github_icon.svg" alt="Github">
+            <a href="https://github.com/cmr927"><img src="img/github_icon.svg" alt="Github"> </a>
+            <a href="https://linkedin.com/in/challis-regan-9121a584"><img src="img/linkedin_icon.svg" alt="LinkedIn">
             </a>
-            <img src="img/linkedin_icon.svg" alt="LinkedIn">
         </div>
         <p>
             <a href="#">Back to top</a>
         </p>
     </footer>
-    <!-- <script src="js/tota11y.min.js"></script>  -->
 </body>
 
 </html>
