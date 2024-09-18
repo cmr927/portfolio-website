@@ -27,12 +27,14 @@ box-sizing: border-box;
 }
 
 .profile__portrait {
-  float: left;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
 }
 
+.figure {
+  float: left
+}
 .page-header {
 display: flex;
 width: 100%;
@@ -168,42 +170,6 @@ width: 33%;
   grid-column: 3 / 3;
   grid-row: 1 / 3;
 } */
-}
-
-@keyframes color-change {
-0% {
-  fill: var(--keyframes-dark-color);
-}
-50% {
-  fill: var(--keyframes-mid-color);
-}
-100% {
-  fill: var(--keyframes-light-color);
-}
-}
-
-.liberty {
-animation: 5s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-from {
-  transform: translate(0, 50px);
-}
-to {
-  transform: translate(200px, 50px);
-}
-}
-@keyframes cloud-move-reverse {
-from {
-  transform: translate(446px, 48px);
-}
-to {
-  transform: translate(100px, 48px);
-}
-}
-.cloud {
-animation: 30s cloud-move infinite alternate linear;
 }
 
 .page-footer {
