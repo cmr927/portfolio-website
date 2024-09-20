@@ -1,7 +1,7 @@
 # cmr927's Portfolio Website
 
 ## Description
-I built my portfolio website with HTML, CSS and JavaScript to showcase my technical and web design skills.
+I built my portfolio website with Bootstrap, HTML, SCSS and JavaScript to showcase my technical and web design skills.
 
 ## Link to Project
 https://cmr927.github.io/portfolio-website
