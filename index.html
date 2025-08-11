@@ -2,91 +2,641 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challis Regan's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challis Regan | Software Developer</title>
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="scss\custom.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="scss/custom.css">
+
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <header class="page-header">
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="img/faviconio-logo/logo-cmr927.png" class="rounded-circle" alt="cmr927's logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse nav-tabs" id="navbarNav">
-                    <ul class="navbar-nav nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/faviconio-logo/logo-cmr927.png" class="rounded-circle me-2" alt="cmr927's logo">
+                Challis Regan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile py-5 text-center">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
+            <figure class="text-center">
+                <img src="img/pexels-yuchen-huang-14191547.jpg" class="rounded-circle" alt="cmr927's portrait">
+                <figcaption class="mt-2">
+                    Photo by <a href="https://www.pexels.com/photo/a-capybara-with-a-hat-14191547"
+                        target="_blank">Yu-Chen Huang</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h1>Hi, I'm Challis!</h1>
+                <h3 class="mb-4">I'm Challis Regan, a software developer based in New York City.</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container text-center">
+        <h1>Projects</h1>
+        <div>
+            <div class="row m-2">
+                <div class="p-2 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2> MyFlix API </h2>
+                            <p>
+                                This is a custom RESTful API, which provides information about movies, titles,
+                                descriptions,
+                                genres,
+                                directors, images, features, users, and more. This API is used for my frontend apps
+                                MyFlix
+                                React
+                                and MyFlix Angular.
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#MyFlixAPIModal">
+                                More Information
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="MyFlixAPIModal" tabindex="-1"
+                                aria-labelledby="MyFlixAPIModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="MyFlixAPIModalLabel"> MyFlix API
+                                                Documentation
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/a2-myflix-api.jpg" style="width: 100%"
+                                                alt="Screenshot of the MyFlix API Documentation">
+                                            <p>
+                                                <b>
+                                                    <ul>Technologies:</ul>
+                                                </b>
+                                                <li>Mongoose (MongoDB),</li>
+                                                <li>Express </li>
+                                                <li>Node.js</li>
+                                                <li>Netlify</li>
+                                                <li>Passport</li>
+                                                <li>bcrypt</li>
+                                                <li>JSON Web Token (JWT)</li>
+                                                <li>Heroku</li>
+                                                <li>JSDoc</li>
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                                <li>JavaScript</li>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <b> Technologies:</b><br> Node.js, HTML5, CSS3, and JavaScript
+                            </p>
+                            <a href="https://movies-myflix-cmr927-6d25967ba551.herokuapp.com/documentation.html"><button
+                                    type="button" class="btn btn-primary">MyFlix
+                                    API
+                                    documentation</button></a>
+                            <br>
+                            <a href="https://github.com/cmr927/myFlix">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2>MyFlix Client React App</h2>
+                            <p>
+                                MyFlix is a single-page web application which provides users with access to information
+                                about
+                                different movies, directors, and genres. Users are able to sign up, update their
+                                personal
+                                information, and create a list of their favorite movies. It uses my custom MyFlix API.
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#MyFlixReactModal">
+                                More Information
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="MyFlixReactModal" tabindex="-1"
+                                aria-labelledby="MyFlixReactModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="MyFlixReactModalLabel">MyFlix React App
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/a3-myflix-react.jpg" style="width: 100%"
+                                                alt="Screenshot of the MyFlix React App">
+                                            <p>
+                                                Here is the <a href="files\case-study-myflix-react.pdf"> case study.
+                                                </a>
+                                                User Stories<br>
+                                            <ul>
+                                                <li>As a user, I want to be able to receive information on movies,
+                                                    directors,
+                                                    and
+                                                    genres so that I can learn more about movies I've watched or am
+                                                    interested
+                                                    in.
+                                                </li>
+                                                <li> As a user, I want to be able to create a profile so I can save data
+                                                    about
+                                                    my
+                                                    favorite movies.</li>
+
+                                            </ul>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    <ul>Technologies:</ul>
+                                                </b>
+                                                <li>React</li>
+                                                <li>React-Router</li>
+                                                <li>React-Bootstrap</li>
+                                                <li>Parcel-Bundler</li>
+                                                <li>HTML5</li>
+                                                <li>SCSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Netlify</li>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <b> Technologies:</b><br> React, React-Bootstrap, HTML5, SCSS, and JavaScript
+                            </p>
+                            <a href="https://cmr927-myflix.netlify.app"><button type="button"
+                                    class="btn btn-primary">Client React App </button> </a>
+                            <br>
+                            <a href="files\case-study-myflix-react.pdf"> Case study
+                            </a>
+                            <br>
+                            <a href="https://github.com/cmr927/myFlix-client">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2>Meet App </h2>
+                            <p>
+                                Meet is a serverless, progressive web application (PWA) where users can find events
+                                happening in
+                                various cities and filter the information. The app can also be used while offline.
+                            </p>
+
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#MeetModal">
+                                More Information
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="MeetModal" tabindex="-1" aria-labelledby="MeetModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="MeetModalLabel">Meet App</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img\a4-meet.jpg" style="width: 100%"
+                                                alt="Screenshot of the Meet App">
+                                            <p>
+                                                Meet is a serverless, progressive web application (PWA) built with React
+                                                using a
+                                                test-driven development (TDD) technique. The front-end is written with
+                                                JavaScript/React. The server logic is written with Node/Express as
+                                                Lambda
+                                                functions
+                                                (FaaS) and is hosted on AWS. The serverless functions connect to the
+                                                Google
+                                                Calendar
+                                                API.
+                                            </p>
+                                            <p> User Stories
+
+                                            <ul>
+
+                                                <li>Feature 1: Filter Events By City </li>
+                                                <li>Feature 2: Show/Hide Event Details</li>
+                                                <li>Feature 3: Specify Number of Events</li>
+                                                <li>Feature 4: Use the App When Offline</li>
+                                                <li> Feature 5: Add an App Shortcut to the Home Screen</li>
+                                                <li>Feature 6: Display Charts Visualizing Event Details</li>
+                                            </ul>
+
+                                            Feature 1<br>
+                                            As a user,<br>
+                                            I should be able to filter events by city,<br>
+                                            So that I can see a list of events taking place in that city.<br>
+
+                                            <br> Feature 2<br>
+                                            As a user,<br>
+                                            I should be able to show/hide event details,<br>
+                                            So that I can read more about the event if I am interested.<br>
+
+                                            <br>Feature 3<br>
+                                            As a user,<br>
+                                            I should be able to specify the number of events,<br>
+                                            So that I can customize my search results.<br>
+
+                                            <br>Feature 4<br>
+                                            As a user,<br>
+                                            I should be able to use the app when offline,<br>
+                                            So that I can use the app without worrying about the internet
+                                            connection.<br>
+
+                                            <br>Feature 5<br>
+                                            As a user,<br>
+                                            I should be able to add an app shortcut to the home screen,<br>
+                                            So that I can find and open the app with fewer steps.<br>
+
+                                            <br>Feature 6<br>
+                                            As a user,<br>
+                                            I should be able to display charts visualizing event details,<br>
+                                            So that I can better understand the data.<br>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    <ul>Technologies:</ul>
+                                                </b>
+                                                <li>React,</li>
+                                                <li>Node,</li>
+                                                <li>Express,</li>
+                                                <li>Jest,</li>
+                                                <li>Jest Cucumber (Gherkin scenarios in Jest),</li>
+                                                <li>Puppeteer,</li>
+                                                <li>Atatus,</li>
+                                                <li>AWS Lambda,</li>
+                                                <li>HTML5,</li>
+                                                <li>CSS3,</li>
+                                                <li>JavaScript</li>
+                                                <li>Google Authentication, <a
+                                                        href="https://e7f39l4mof.execute-api.us-east-1.amazonaws.com/dev/api/get-events ">Google
+                                                        Calendar API</a></li>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <b> Technologies:</b><br> React, HTML5, CSS3, JavaScript
+                            </p>
+                            <a href="https://cmr927.github.io/meet/"><button type="button" class="btn btn-primary">Meet
+                                    App</button></a>
+                            <br>
+                            <a href="https://github.com/cmr927/meet">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2>Chat App</h2>
+                            <p>
+                                Chat App is a native chat app, for both Android and iOS devices. It sends and recieves
+                                text,
+                                pictures, locations, and audio recordings.
+                            </p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#ChatModal">
+                                More Information
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="ChatModal" tabindex="-1" aria-labelledby="ChatModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="ChatModalLabel">Chat App</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/a5-chat-app.jpg" style="width: 50%"
+                                                alt="Screenshot of the Chat App">
+                                            <p>
+                                                Home screen
+                                            </p>
+                                            <img src="img/a5-chat-app-2.png" style="width: 50%"
+                                                alt="Screenshot of the Chat App">
+                                            <p>
+                                                Chat App sends and recieves text, pictures, locations, and audio
+                                                recordings. Here is the <a href="files\case-study-chat-app.pdf"> case
+                                                    study. </a>
+                                            </p>
+                                            <p>User Stories<br>
+                                            <ul>
+                                                <li>As a new user, I want to be able to easily enter a chat room so I
+                                                    can
+                                                    quickly
+                                                    star talking to my friends and family. </li>
+                                                <li>As a user, I want to be able to send messages to my friends and
+                                                    family
+                                                    members
+                                                    to exchange the latest news.</li>
+                                                <li>As a user, I want to send images to my friends to show them what I'm
+                                                    currently
+                                                    doing. </li>
+                                                <li>As a user, I want to share my location with my friends to show them
+                                                    where I
+                                                    am.
+                                                </li>
+                                                <li>As a user, I want to be able to read my messages offline so I can
+                                                    reread
+                                                    conversations at any time.</li>
+                                                <li>As a user with a visual impairment, I want to use a chat app that is
+                                                    compatible
+                                                    with a screen reader so that I can engage with a chat interface.
+                                                </li>
+                                            </ul>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    <ul>Technologies:</ul>
+                                                </b>
+                                                <li>React Native</li>
+                                                <li>Expo</li>
+                                                <li>Google Firestore Database</li>
+                                                <li>Android Studio</li>
+                                                <li></li>Gifted Chat UI Library AsyncStorage
+                                                <li>NetInfo</li>
+                                                <li>Android Studio virtual devices</li>
+                                                <li>Node.js</li>
+                                                <li>JavaScript</li>
+                                            </p>
+                                        </div>,
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+
+                                <b> Technologies:</b><br>
+                                React Native, Node.js, Google Firestore Database, and JavaScript
+                            </p>
+                            <a href="files\case-study-chat-app.pdf"> Case study </a>
+                            <!-- <a href="#">Link to video demo of Chat App</a> -->
+                            <br>
+                            <a href="https://github.com/cmr927/chat-app">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2>MyFlix Client Angular App</h2>
+                            <p>
+                                MyFlix is a single-page web application which provides users with access to information
+                                about
+                                different movies, directors, and genres. Users are able to sign up, update their
+                                personal
+                                information, and create a list of their favorite movies. It uses my custom MyFlix API.
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#MyFlixAngularModal">
+                                More Information
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="MyFlixAngularModal" tabindex="-1"
+                                aria-labelledby="MyFlixAngularModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="MyFlixAngularLabel">MyFlix Angular App</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/a6-myflix-angular.jpg" style="width: 100%"
+                                                alt="Screenshot of the MyFlix Angular App">
+                                            <p>
+                                                MyFlix is a single-page, responsive movie app built with Angular, with
+                                                routing
+                                                and
+                                                several interface views. This client-side supports MyFlix API, the
+                                                existing
+                                                server-side code (REST API and database) by facilitating user requests
+                                                and
+                                                rendering
+                                                the response from the server-side via a number of different interface
+                                                views.
+
+                                                MyFlix provides users with access to information about different movies,
+                                                directors,
+                                                and genres. Users are able to sign up, update their personal
+                                                information,
+                                                and
+                                                create
+                                                a list of their favorite movies.
+                                            </p>
+                                            <p>
+                                                User Stories<br>
+                                            <ul>
+                                                <li>As a user, I want to be able to receive information on movies,
+                                                    directors,
+                                                    and
+                                                    genres so that I can learn more about movies I've watched or am
+                                                    interested
+                                                    in.
+                                                </li>
+                                                <li> As a user, I want to be able to create a profile so I can save data
+                                                    about
+                                                    my
+                                                    favorite movies.</li>
+
+                                            </ul>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    <ul>Technologies:</ul>
+                                                </b>
+                                                <li>Angular</li>
+                                                <li>Angular Material</li>
+                                                <li>JSON Web Tokens (JWT)</li>
+                                                <li>TypeDoc</li>
+                                                <li>Node.js</li>
+                                                <li>HTML5</li>
+                                                <li>SCSS</li>
+                                                <li>TypeScript</li>
+                                            </p>
+                                            <a href="https://trello.com/b/n3WuHKQn/fsi-a6-collaboration-documentation">Kanban
+                                                board</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <b> Technologies:</b><br> Angular, Node.js, HTML5, SCSS and TypeScript
+                            </p>
+                            <a href="https://cmr927.github.io/myFlix-Angular-client"><button type="button"
+                                    class="btn btn-primary">MyFlix Client Angular App</button></a>
+                            <br>
+                            <a href="https://github.com/cmr927/myFlix-Angular-client">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2>Chop It Like It's Hot Django App</h2>
+                            <p>
+                                Chop It Like It's Hot is a recipe web app built with Django. Users can create and modify
+                                recipes with ingredients, cooking time, and a difficulty
+                                parameter that is automatically calculated by the app. Users are able to search for
+                                recipes by their name and/or ingredients.
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#DjangoModal">
+                                More Information
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="DjangoModal" tabindex="-1" aria-labelledby="DjangoModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="DjangoLabel">Chot It Like It's Hot</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img\pwd-django.jpg" style="width: 100%"
+                                                alt="Screenshot of the Chop It Like It's Hot App">
+                                            <p>
+                                                Chop It Like It's Hot is a recipe web app built with Django. It is the
+                                                successor to my Python command line recipe app.
+
+                                                Users can create and modify recipes with ingredients, cooking time, and
+                                                a difficulty parameter that is automatically calculated by the app.
+                                                Users are able to search for recipes by their name and/or ingredients.
+
+                                                Here is the <a href="files\case-study-django-app.pdf"> case study. </a>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    <ul>Technologies:</ul>
+                                                </b>
+                                                <li>Backend: Django, Python, SQLite/PostgreSQL</li>
+                                                <li>Frontend: HTML, CSS, Bootstrap</li>
+                                                <li>Media Storage: Amazon S3 (via django-storages)</li>
+                                                <li>Deployment: Heroku</li>
+                                                <li>Data Visualization: Matplotlib</li>
+                                                <li>Authentication: Django auth system (login, logout, register)</li>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                <b> Technologies:</b><br> Django, Python, SQLite/PostgreSQL, HTML, CSS, Bootstrap
+                            </p>
+                            <a href="https://shielded-badlands-21677-49d691812b2d.herokuapp.com"><button type="button"
+                                    class="btn btn-primary">Chop It Like It's Hot App</button></a>
+                            <br>
+                            <a href="files\case-study-django-app.pdf">Case Study</a>
+                            <br>
+                            <a href="https://github.com/cmr927/recipe-app">Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="profile d-flex container text-center">
-        <div>
-            <figure class="figure">
-                <img src="img/pexels-yuchen-huang-14191547.jpg" class="rounded-circle" alt="cmr927's portrait">
-                <figcaption>Photo by <a href="https://www.pexels.com/photo/a-capybara-with-a-hat-14191547"> Yu-Chen
-                        Huang
-                    </a></figcaption>
-            </figure>
         </div>
-        <div class="p-4">
-            <h1>Hello World!</h1>
-            <br>
-            <p>
-            <h3>
-                My name is Challis Regan, and I am a passionate web developer from NYC
-            </h3>
-            </p>
-            <br>
-            <a href="projects.html"><button type="button" class="btn btn-primary"> Check out my code</button></a>
-        </div>
-    </div>
+    </section>
 
-    <footer class="footer text-center w-100">
-        <p>
-            Find me on
-        </p>
-        <div>
-            <a href="https://github.com/cmr927"><img src="img/github_icon_blue.svg" alt="Github"> </a>
-            <a href="https://linkedin.com/in/challisregan"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
+    <!-- Footer -->
+    <footer class="text-center">
+        <p class="mb-2">Find me on</p>
+        <div class="mb-3">
+            <a href="https://github.com/cmr927" target="_blank" aria-label="GitHub">
+                <img src="img/github_icon_blue.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/challisregan" target="_blank" aria-label="LinkedIn">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            </a>
         </div>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
+        <p><a href="#">Back to top</a></p>
     </footer>
-</body>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
